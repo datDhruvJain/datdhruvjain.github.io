@@ -3,9 +3,10 @@
 2. [Pip](#pip)
 3. [Setuptools](#setuptools)
 4. [argparse](#argparse)
-5. [Note on python packages](#python-packages)
-6. [kivy](#kivy)
-7. [Preferred LSP](#preferred-lsp)
+5. [pyinstaller](#pyinstaller)
+6. [Note on python packages](#python-packages)
+7. [kivy](#kivy)
+8. [Preferred LSP](#preferred-lsp)
 
 
 ### pydoc
@@ -161,6 +162,13 @@ Using the default option or the --onedir option results in much faster code exec
 
 As to how to go about uncomplicating the directory stuff, just create a shortcut at the root of the folder and that's that.
 
+### pyinstaller
+
+Pyinstaller is a python module that creates native binaries out of a python file.
+
+pip install pyinstaller
+
+-F, --onefile creates just one standalone executable
 
 ### Python packages
 
