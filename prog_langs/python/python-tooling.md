@@ -100,14 +100,17 @@ python -m pip install path/to/SomeProject
 
 #### Example configuration
 
+pyproject.toml
 
-``` pyproject.toml
+``` 
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 ```
 
-``` cfg
+setup.cfg
+
+``` 
 [metadata]
 name = mypackage
 version = 0.0.1
@@ -139,7 +142,7 @@ exclude=pk3, pk4
 
 project structure
 
-``` project structure
+``` 
 ~/mypackage/
     pyproject.toml
     setup.cfg # or setup.py
