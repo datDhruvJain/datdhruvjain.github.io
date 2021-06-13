@@ -99,7 +99,8 @@ python -m pip install path/to/SomeProject
 ### setuptools 
 *For building packages for pip*
 
-#### Example configuration
+<details markdown=1>
+<summary>Example configuration</summary>
 
 pyproject.toml
 
@@ -151,6 +152,7 @@ project structure
 
 ```
 
+</details>
 
 ### argparse
 
