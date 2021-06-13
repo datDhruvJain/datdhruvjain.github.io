@@ -98,9 +98,7 @@ python -m pip install path/to/SomeProject
 ### setuptools 
 *For building packages for pip*
 
-<details open>
-<summary markdown='span'>Example configuration</summary>
-<br>
+#### Example configuration
 
 
 ``` pyproject.toml
