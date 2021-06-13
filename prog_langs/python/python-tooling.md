@@ -99,7 +99,7 @@ python -m pip install path/to/SomeProject
 *For building packages for pip*
 
 <details open>
-<summary>Example configuration</summary>
+<summary markdown='span'>Example configuration</summary>
 <br>
 
 

@@ -16,14 +16,14 @@ eg: `[Referencing headers in markdown](#To-generate-the-indexes-or-links-to-head
 
 ```
 <details>
-<summary>Want to ruin the surprise?</summary>
+<summary markdown='span'>Want to ruin the surprise?</summary>
 <br>
 Well, you asked for it!
 </details>
 ```
 
 <details>
-<summary>How do I dropdown?</summary>
+<summary markdown='span'>How do I dropdown?</summary>
 <br>
 This is how you dropdown.
 </details>
@@ -31,7 +31,7 @@ This is how you dropdown.
 and 
 
 <details open>
-<summary>Want to ruin the surprise?</summary>
+<summary markdown='span'>Want to ruin the surprise?</summary>
 <br>
 Well, you asked for it!
 </details>
