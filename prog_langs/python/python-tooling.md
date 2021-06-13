@@ -148,8 +148,6 @@ project structure
 ```
 
 
-</details>
-
 ### argparse
 
 Learned about `argparse` library of python std lib, it is **Amazing!**
