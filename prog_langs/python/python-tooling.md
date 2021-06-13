@@ -102,6 +102,7 @@ python -m pip install path/to/SomeProject
 <summary>Example configuration</summary>
 <br>
 
+
 ``` pyproject.toml
 [build-system]
 requires = ["setuptools", "wheel"]
@@ -147,6 +148,8 @@ project structure
     mypackage/__init__.py
 
 ```
+
+
 </details>
 
 ### argparse
