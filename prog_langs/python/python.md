@@ -5,7 +5,7 @@
 <details markdown=1>
 <summary> 
 
-<h2>On python tooling </h1>
+<h2>On python tooling </h2>
 
 </summary>
 
