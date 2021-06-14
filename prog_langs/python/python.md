@@ -1,11 +1,11 @@
-#### [Check out My Notes python concepts](./python-oop)
+## [Check out My Notes python concepts](./python-oop)
 
 ---
 
 <details markdown=1>
 <summary> 
 
-## On python tooling 
+<h2>On python tooling </h1>
 
 </summary>
 
