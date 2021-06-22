@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css?v=78c8719698feee0553096165409216db0a43f06f">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<style>
+		.navbar {
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 2px 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 2px 15px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: green;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #202020;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 8px 14px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #4666FF;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>datdhruvjain.github.io | Interesting learnings on Computer stuff.</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="datdhruvjain.github.io" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Interesting learnings on Computer stuff." />
+<meta property="og:description" content="Interesting learnings on Computer stuff." />
+<link rel="canonical" href="http://192.168.1.117:4000/prog_langs/python/python-oop.html" />
+<meta property="og:url" content="http://192.168.1.117:4000/prog_langs/python/python-oop.html" />
+<meta property="og:site_name" content="datdhruvjain.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="datdhruvjain.github.io" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://192.168.1.117:4000/prog_langs/python/python-oop.html","headline":"datdhruvjain.github.io","description":"Interesting learnings on Computer stuff.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a id="a-title" href="/">
+				<h1>datdhruvjain.github.io</h1>
+			</a>
+			<h2>Interesting learnings on Computer stuff.</h2>
+
+			<!--- need to check what this is all about
+		<section id="downloads">
+		
+		</section>
+		--->
+
+			<section class="navbar">
+
+
+				<!-- THE NON-DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+				<a href="./relative-file">Title 2</a>
+				<a href="../dir/relative-file-path">Title 3</a>
+				<a href="https://datdhruvjain.github.io/blockchain/blockchain">Blockchain</a>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				---------------------------------------->
+
+				<!-- THE DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<div class="dropdown">
+					<button class="dropbtn">dropdown-title
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+						<a href="./relative-file">Title 2</a>
+						<a href="../dir/relative-file-path">Title 3</a>
+					</div>
+				</div>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				------------------------------------------>
+
+				<a href="/configurations/configurations">My Configs</a>
+
+
+				<div class="dropdown">
+					<button class="dropbtn">Journeys
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<!--a href="https://datdhruvjain.github.io/journeys/blockchain/blockchain">Blockchain</a-->
+						<a href="/journeys/cybersec/cybersec">Cyber Sec</a>
+						<a href="/journeys/thm/thm">TryHackMe Journeys</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Prog Langs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/prog_langs/python/python">Python</a>
+						<a href="/prog_langs/cpp/cpp">C++</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Tools
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/tools/git">Git</a>
+						<a href="/tools/vim/vim-learnings">Vim</a>
+						<a href="/tools/markdown">Markdown</a>
+						<a href="/tools/computer-networks/computer-networks">Computer-Networks</a>
+					</div>
+				</div>
+
+
+				<!-- add new items from here -->
+			</section>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<section id="main_content">
+			
+<p>self =&gt; instances -&gt; methods taking this as the first arguement work on instances</p>
+
+<p>cls =&gt; classes -&gt; work on the entire class rather than an instance</p>
+
+<p>both of them are context-aware</p>
+
+<p>when working with classes, unlike regular methods that take instances as the first arguemnt and unlike class methods that take classes as the first argument, static methods take no arguments</p>
+
+<h1 id="object-oriented-concepts-with-python">Object Oriented Concepts with Python</h1>
+
+<p>to declare a class in python you use the <code class="language-plaintext highlighter-rouge">class</code> keyword, if at all you want the class to be empty, you can use the <code class="language-plaintext highlighter-rouge">pass</code> keyword</p>
+
+<p>example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+    <span class="k">pass</span>
+</code></pre></div></div>
+
+<h3 id="instance-variables">Instance variables</h3>
+
+<p>contain data this is unique to each instance of the class</p>
+
+<h2 id="initself"><strong>init</strong>(self)</h2>
+
+<p>dunder init is like the default constructor in java</p>
+
+<p>self is (a reference to) THE INSTANCE ITSELF, which the initialize receives automatically and that is not restricted to self but self is the convention</p>
+
+<p>here’s what we mean:
+ say we created that employee class, when we set a variable of the class, say first name, instead of doing <code class="language-plaintext highlighter-rouge">emp1.first = "lala"</code>, we do <code class="language-plaintext highlighter-rouge">self.first = "lala"</code>. Here emp1 is the instance and self is the <strong>placeholder</strong> for the instance</p>
+
+<p>The first parameter of any class method is always the instance (which we have named self). Then when we create new instances we dont have to pass that instance/self.</p>
+
+<p>The init method will be run automatically, emp1 is passed to the self attribute</p>
+
+<p>example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">first</span> <span class="o">=</span> <span class="n">first</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">last</span> <span class="o">=</span> <span class="n">last</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">pay</span> <span class="o">=</span> <span class="n">pay</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">first</span> <span class="o">+</span> <span class="s">'.'</span> <span class="o">+</span> <span class="n">last</span> <span class="o">+</span> <span class="s">"@company.com"</span>
+
+    <span class="k">def</span> <span class="nf">fullname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"{} {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">last</span><span class="p">))</span>
+
+
+<span class="c1"># The init method will be run automatically, emp1 is passed to the self attribute
+</span><span class="n">emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">"Dhruv"</span> <span class="p">,</span><span class="s">"Jain"</span><span class="p">,</span> <span class="mi">50000</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>When this is run the init method is run automatically</p>
+
+<p>If you dont pass in the self method, you get this error:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+  File <span class="s2">".</span><span class="se">\l</span><span class="s2">earning-computing</span><span class="se">\p</span><span class="s2">ython-oop</span><span class="se">\H</span><span class="s2">elloWorld.py"</span>, line 20, <span class="k">in</span> &lt;module&gt;
+    emp1.fullname<span class="o">()</span>
+TypeError: fullname<span class="o">()</span> takes 0 positional arguments but 1 was given
+</code></pre></div></div>
+
+<p>This error arises because the class gives in the instance/self argument to the class-method, but here we said that the method does NOT take any argument. That is why this error aries.</p>
+
+<h4 id="calling-class-method-from-the-class-rather-than-the-instance">calling class method from the class rather than the instance</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Calling class-method from instance
+</span><span class="n">emp1</span><span class="p">.</span><span class="n">fullname</span><span class="p">()</span>
+
+<span class="c1"># Calling class-method from class
+</span><span class="n">Employee</span><span class="p">.</span><span class="n">fullname</span><span class="p">(</span><span class="n">emp1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="class-variable">class variable</h2>
+
+<p>class variables are variables that are same for all instances of a class when the instance is initialized</p>
+
+<p>when a variable is called, python will first check if the variable exists in the namespace of the <em>instance</em>, if it does not exist, then python will check for it in the classes the instance inherits from.</p>
+
+<p>class variables can be accessed via instances as well as classes:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+
+    <span class="n">num_of_emps</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">raise_amount</span> <span class="o">=</span> <span class="mf">1.04</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">):</span>
+       <span class="bp">self</span><span class="p">.</span><span class="n">first</span> <span class="o">=</span> <span class="n">first</span>
+        <span class="c1"># same things as before
+</span>        <span class="n">Employee</span><span class="p">.</span><span class="n">num_of_emps</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">fullname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"{} {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">last</span><span class="p">))</span> 
+
+    <span class="k">def</span> <span class="nf">apply_raise</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">pay</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">pay</span> <span class="o">*</span> <span class="bp">self</span><span class="p">.</span><span class="n">raise_amount</span><span class="p">)</span>
+        <span class="c1"># if we hardcoded this to Employees.raise_amount,
+</span>        <span class="c1"># instances cannot update this
+</span>
+<span class="n">emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">()</span>
+
+<span class="c1"># Employee.raise_amount == 1.04
+# emp1.raise_amount == 1.04
+</span>
+<span class="n">emp1</span><span class="p">.</span><span class="n">raise_amount</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="c1"># now emp1.raise_amount == 1.5
+# BUT Employee.raise_amount == 1.04
+# self.raise_amount is a general case of emp1.raise_amount
+</span></code></pre></div></div>
+
+<p>a_name.lol -&gt; hardcoded value of the class
+self.lol -&gt; can be changed by instances
+emp1.lol -&gt; are instance variables inherited from class or are set afterwards</p>
+
+<h2 id="class-methods">Class methods</h2>
+
+<p>to define a class method, we use the decorator <code class="language-plaintext highlighter-rouge">@classmethod</code> one line above the method.</p>
+
+<p>What class methods do is that they manipulate the whole class <em>along with all instances of the class</em></p>
+
+<p>Think of them as static methods (as seen in java)</p>
+
+<p>Like the <code class="language-plaintext highlighter-rouge">self</code> convention used for instances in python, classes have a convention called <code class="language-plaintext highlighter-rouge">cls</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Employee</span>
+    <span class="n">raise_amt</span> <span class="o">=</span> <span class="mf">1.04</span>
+    
+    <span class="o">@</span><span class="nb">classmethod</span>
+    <span class="k">def</span> <span class="nf">set_raise_amount</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="n">cls</span><span class="p">.</span><span class="n">raise_amt</span> <span class="o">=</span> <span class="n">amount</span>
+        <span class="c1"># or do something
+</span></code></pre></div></div>
+
+<h4 id="class-methods-as-custom-constructors">class methods as custom constructors</h4>
+<p>class methods can be used to construct new classes as follows:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+    <span class="n">num_of_emps</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">first</span> <span class="o">=</span> <span class="n">first</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">last</span> <span class="o">=</span> <span class="n">last</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">pay</span> <span class="o">=</span> <span class="n">pay</span>
+
+        <span class="n">Employee</span><span class="p">.</span><span class="n">num_of_emps</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">fullname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"{} {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">last</span><span class="p">))</span> 
+
+    <span class="o">@</span><span class="nb">classmethod</span>
+    <span class="k">def</span> <span class="nf">from_string</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">emp_str</span><span class="p">):</span>
+        <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span> <span class="o">=</span> <span class="n">emp_str</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">"-"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">cls</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">)</span>
+	<span class="c1"># Most important point here
+</span>	<span class="c1"># return a class object after parsing string
+</span>
+<span class="n">emp3_string</span> <span class="o">=</span> <span class="s">"water bottle"</span>
+<span class="n">emp3</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">emp3_string</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">Employee</span><span class="p">.</span><span class="n">num_of_emps</span><span class="p">)</span>
+<span class="n">emp3</span><span class="p">.</span><span class="n">fullname</span><span class="p">()</span>
+</code></pre></div></div>
+<p>In the above example, the <code class="language-plaintext highlighter-rouge">cls()</code> is a class constructor. It creates a class object from by applying the given logic</p>
+
+<h3 id="static-methods">Static methods</h3>
+<p>when working with classes, unlike regular methods that take instances as the first arguemnt and unlike class methods that take classes as the first argument, static methods take no arguments</p>
+
+<p>use static methods where you dont need to use any of the class’s variables or functions. In the example we are using, this may be the day of the week, which is entirely independent of the name or pay or anything else from the class really.</p>
+
+<p>creating a staticmethod:</p>
+
+<ol>
+  <li>
+    <p>using staticmethod() function
+ ```class Calculator:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> def addNumbers(x, y):
+     return x + y
+</code></pre></div>    </div>
+
+    <p># create addNumbers static method
+ Calculator.addNumbers = staticmethod(Calculator.addNumbers)</p>
+
+    <p>print(‘Product:’, Calculator.addNumbers(15, 110))
+ ```</p>
+  </li>
+  <li>
+    <p>using @staticmethod decorator
+ ```class Calculator:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # create addNumbers static method
+ @staticmethod
+ def addNumbers(x, y):
+     return x + y
+</code></pre></div>    </div>
+
+    <p>print(‘Product:’, Calculator.addNumbers(15, 110))
+ ```</p>
+  </li>
+</ol>
+
+<h2 id="inherititance">Inherititance</h2>
+<p>to inherit a class’s attributes in anohter class, just pass it as an arguement to the inheriting class
+eg <code class="language-plaintext highlighter-rouge">class Developer(Employee):</code></p>
+
+<p>remeber python resolves methods and variables as:</p>
+
+<ol>
+  <li>current class object</li>
+  <li>parent class object</li>
+  <li>parent’s parent class object</li>
+</ol>
+
+<p>and so on</p>
+
+<h3 id="super">super()</h3>
+<p>To call the methods of a class above the current class, use <code class="language-plaintext highlighter-rouge">super</code>, for eg:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Developer</span><span class="p">(</span><span class="n">Employee</span><span class="p">):</span>
+    <span class="n">raise_amount</span> <span class="o">=</span> <span class="mf">1.10</span>
+    <span class="c1"># Can you think why this first, last ... is being passed down?
+</span>    <span class="c1"># Think.
+</span>    <span class="c1"># You need to do the same with *args and **kwargs also
+</span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">,</span> <span class="n">prog_lang</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">prog_lang</span> <span class="o">=</span> <span class="n">prog_lang</span>
+</code></pre></div></div>
+<p>oh and while using super, you dont need to pass through self in the <code class="language-plaintext highlighter-rouge">super().__init__()</code>, however you need to pass ALL the fields of the super class in the class’s <code class="language-plaintext highlighter-rouge">__init__</code></p>
+
+<h2 id="most-of-the-code-uptill-now">Most of the code uptill now</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+
+    <span class="n">num_of_emps</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">raise_amount</span> <span class="o">=</span> <span class="mf">1.04</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">first</span> <span class="o">=</span> <span class="n">first</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">last</span> <span class="o">=</span> <span class="n">last</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">pay</span> <span class="o">=</span> <span class="n">pay</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">first</span> <span class="o">+</span> <span class="s">'.'</span> <span class="o">+</span> <span class="n">last</span> <span class="o">+</span> <span class="s">"@company.com"</span>
+
+        <span class="n">Employee</span><span class="p">.</span><span class="n">num_of_emps</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">fullname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"{} {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">last</span><span class="p">))</span> 
+
+    <span class="k">def</span> <span class="nf">apply_raise</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">pay</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">pay</span> <span class="o">*</span> <span class="bp">self</span><span class="p">.</span><span class="n">raise_amount</span><span class="p">)</span>
+        <span class="c1"># if we hardcoded this to Employees.raise_amount, instances cannot update this value
+</span>    
+    <span class="o">@</span><span class="nb">classmethod</span>
+    <span class="k">def</span> <span class="nf">from_string</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">emp_str</span><span class="p">):</span>
+        <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span> <span class="o">=</span> <span class="n">emp_str</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">"-"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">cls</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">)</span>
+    <span class="o">@</span><span class="nb">staticmethod</span>
+    <span class="k">def</span> <span class="nf">is_workday</span><span class="p">(</span><span class="n">day</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">day</span><span class="p">.</span><span class="n">weekday</span><span class="p">()</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">or</span> <span class="n">day</span><span class="p">.</span><span class="n">weekday</span><span class="p">()</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">False</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">True</span>
+
+<span class="k">class</span> <span class="nc">Developer</span><span class="p">(</span><span class="n">Employee</span><span class="p">):</span>
+    <span class="n">raise_amount</span> <span class="o">=</span> <span class="mf">1.10</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">,</span> <span class="n">prog_lang</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">prog_lang</span> <span class="o">=</span> <span class="n">prog_lang</span>
+
+<span class="k">class</span> <span class="nc">Manager</span><span class="p">(</span><span class="n">Employee</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">,</span> <span class="n">employees</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">employees</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">employees</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">employees</span> <span class="o">=</span> <span class="n">employees</span>
+    <span class="k">def</span> <span class="nf">add_emp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">emp</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">emp</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">employees</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">employees</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">emp</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">remove_emp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">emp</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">emp</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">employees</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">employees</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">emp</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">disp_emp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">employees</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">emp</span><span class="p">.</span><span class="n">fullname</span><span class="p">())</span>
+
+<span class="n">dev1</span> <span class="o">=</span> <span class="n">Developer</span><span class="p">(</span><span class="s">"Dhruv"</span> <span class="p">,</span><span class="s">"Jain"</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="s">"python"</span><span class="p">)</span>
+<span class="n">dev2</span> <span class="o">=</span> <span class="n">Developer</span><span class="p">(</span><span class="s">"Mamma"</span><span class="p">,</span> <span class="s">"Hand"</span><span class="p">,</span> <span class="mi">60000</span><span class="p">,</span> <span class="s">"java"</span><span class="p">)</span>
+
+<span class="c1">#print(dev1.pay)
+#dev1.apply_raise()
+#print(dev1.pay)
+</span>
+<span class="c1"># dev1.fullname()
+# dev2.fullname()
+</span>
+<span class="n">mgr1</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">(</span><span class="s">"sue"</span><span class="p">,</span> <span class="s">"smith"</span><span class="p">,</span> <span class="mi">70000</span><span class="p">,</span> <span class="p">[</span><span class="n">dev1</span><span class="p">])</span>
+
+<span class="c1">#print(isinstance(mgr1, Manager))
+#print(isinstance(mgr1, Employee))
+#print(isinstance(mgr1, Developer))
+</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">issubclass</span><span class="p">(</span><span class="n">Manager</span><span class="p">,</span> <span class="n">Employee</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="magic-methods">Magic methods</h2>
+<p>allows us to emulate built in behaviour within python and allows us to implement operator overloading</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># return a string for the DEVELOPERS to see
+</span>
+<span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># return stuff for the END USERS to see
+</span>
+<span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="c1"># defines how to add datatypes
+</span>    <span class="c1"># And Yes, other is a convention
+</span></code></pre></div></div>
+
+<h2 id="property-decorators">Property decorators</h2>
+<p>property decorators allows methods to be accessed as variables rather than a function call</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">pay</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">first</span> <span class="o">=</span> <span class="n">first</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">last</span> <span class="o">=</span> <span class="n">last</span>
+        <span class="c1">#self.email = first + '.' + last + "@company.com"
+</span>    
+    <span class="o">@</span><span class="nb">property</span>
+    <span class="k">def</span> <span class="nf">email</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span><span class="p">(</span><span class="s">"{}.{}@email.com"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">last</span><span class="p">))</span> 
+
+    <span class="o">@</span><span class="nb">property</span>
+    <span class="k">def</span> <span class="nf">fullname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span><span class="p">(</span><span class="s">"{} {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">se</span> <span class="n">lf</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">last</span><span class="p">))</span> 
+
+
+<span class="n">emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">"shriyas"</span><span class="p">,</span><span class="s">"Iyer"</span><span class="p">,</span> <span class="mi">50000</span><span class="p">)</span>
+<span class="n">emp2</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">"Vikrant"</span><span class="p">,</span> <span class="s">"Tiru"</span><span class="p">,</span> <span class="mi">70000</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">emp1</span><span class="p">.</span><span class="n">email</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="setter-decorators-and-functions">Setter decorators and functions</h3>
+<p>To use the Setter decorator, use the method name you want to define along with
+ .setter, for eg:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="o">@</span><span class="n">fullname</span><span class="p">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fullname</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="n">first</span><span class="p">,</span> <span class="n">last</span> <span class="o">=</span> <span class="n">name</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">first</span> <span class="o">=</span> <span class="n">first</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">last</span> <span class="o">=</span> <span class="n">last</span>
+</code></pre></div></div>
+
+<h3 id="deleter-decorator">deleter decorator</h3>
+<p>To use a deleter decorator, use the method name you want to use along with .deleter, and then while deleting, use the <code class="language-plaintext highlighter-rouge">del</code> keyword</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="o">@</span><span class="n">fullname</span><span class="p">.</span><span class="n">deleter</span>
+    <span class="k">def</span> <span class="nf">fullname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Deleting name"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">first</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">last</span> <span class="o">=</span> <span class="bp">None</span>
+
+<span class="k">del</span> <span class="n">emp1</span><span class="p">.</span><span class="n">fullname</span>
+</code></pre></div></div>
+
+<h2 id="self--main">Self == main??</h2>
+<p><strong>it is</strong> <code class="language-plaintext highlighter-rouge">if __name__ == "__main__"</code>!!!</p>
+
+<p><strong>name</strong> signifies name of the caller or something. <strong>main</strong> is the caller then!</p>
+
+		</section>
+	</div>
+</body>
+
+</html>

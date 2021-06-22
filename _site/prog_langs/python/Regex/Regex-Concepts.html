@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css?v=78c8719698feee0553096165409216db0a43f06f">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<style>
+		.navbar {
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 2px 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 2px 15px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: green;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #202020;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 8px 14px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #4666FF;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Regex Concepts | datdhruvjain.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Regex Concepts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Interesting learnings on Computer stuff." />
+<meta property="og:description" content="Interesting learnings on Computer stuff." />
+<link rel="canonical" href="http://192.168.1.117:4000/prog_langs/python/Regex/Regex-Concepts.html" />
+<meta property="og:url" content="http://192.168.1.117:4000/prog_langs/python/Regex/Regex-Concepts.html" />
+<meta property="og:site_name" content="datdhruvjain.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Regex Concepts" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://192.168.1.117:4000/prog_langs/python/Regex/Regex-Concepts.html","headline":"Regex Concepts","description":"Interesting learnings on Computer stuff.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a id="a-title" href="/">
+				<h1>datdhruvjain.github.io</h1>
+			</a>
+			<h2>Interesting learnings on Computer stuff.</h2>
+
+			<!--- need to check what this is all about
+		<section id="downloads">
+		
+		</section>
+		--->
+
+			<section class="navbar">
+
+
+				<!-- THE NON-DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+				<a href="./relative-file">Title 2</a>
+				<a href="../dir/relative-file-path">Title 3</a>
+				<a href="https://datdhruvjain.github.io/blockchain/blockchain">Blockchain</a>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				---------------------------------------->
+
+				<!-- THE DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<div class="dropdown">
+					<button class="dropbtn">dropdown-title
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+						<a href="./relative-file">Title 2</a>
+						<a href="../dir/relative-file-path">Title 3</a>
+					</div>
+				</div>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				------------------------------------------>
+
+				<a href="/configurations/configurations">My Configs</a>
+
+
+				<div class="dropdown">
+					<button class="dropbtn">Journeys
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<!--a href="https://datdhruvjain.github.io/journeys/blockchain/blockchain">Blockchain</a-->
+						<a href="/journeys/cybersec/cybersec">Cyber Sec</a>
+						<a href="/journeys/thm/thm">TryHackMe Journeys</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Prog Langs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/prog_langs/python/python">Python</a>
+						<a href="/prog_langs/cpp/cpp">C++</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Tools
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/tools/git">Git</a>
+						<a href="/tools/vim/vim-learnings">Vim</a>
+						<a href="/tools/markdown">Markdown</a>
+						<a href="/tools/computer-networks/computer-networks">Computer-Networks</a>
+					</div>
+				</div>
+
+
+				<!-- add new items from here -->
+			</section>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<section id="main_content">
+			<h1 id="regex-concepts">Regex Concepts</h1>
+
+<p>To escape characters you need to use <code class="language-plaintext highlighter-rouge">\</code> escape characters, for eg if you want to search for a “?” or “.” or “", use backslash <code class="language-plaintext highlighter-rouge">\.</code>, <code class="language-plaintext highlighter-rouge">\?</code>, <code class="language-plaintext highlighter-rouge">\\</code>. If you want to search for an email address eg: name@example.com, use: <code class="language-plaintext highlighter-rouge">name@example\.com</code></p>
+
+<p>. -&gt; matches any character except newline character</p>
+
+<p>\d matches digits (anything from 0-9)</p>
+
+<p>\D matches anything BUT a digit</p>
+
+<p>\w searches for any alphanumeric character (a-z,A-Z,0-9)</p>
+
+<p>\W matches anything that is not an alphanumeric character</p>
+
+<p>\s matches whitespaces (space, tab, newline)</p>
+
+<p>\S matches anthing that is not a whitespace</p>
+
+<h4 id="anchors---dont-match-characters-but-special-positions">Anchors - dont match characters but special positions</h4>
+
+<p>special posiotions like starting of the line, ending of the line etc</p>
+
+<p>\b matches word at boundries</p>
+
+<p>\B matches word that are not word boundries</p>
+
+<p>for eg: Ha HaHa, <code class="language-plaintext highlighter-rouge">\bHa</code> matches <strong>Ha Ha</strong>Ha but not Ha Ha<em>Ha</em>. <code class="language-plaintext highlighter-rouge">\bHa\b</code> matches word boundries both at the end and at the begining: <strong>Ha</strong> HaHa only matches where <code class="language-plaintext highlighter-rouge">Ha\b</code> matches <strong>Ha</strong> Ha<strong>Ha</strong></p>
+
+<p>^ matches start of the line</p>
+
+<p>^Ha matches only <strong>Ha</strong> bro HaHa HaHa, because the line starts with an Ha</p>
+
+<p>$ matches end of line</p>
+
+<p>$Ha only matches Ha bro HaHa Ha<strong>Ha</strong> beacause it is at the end of the line</p>
+
+<h3 id="character-sets">character sets</h3>
+<p>[] -&gt; matches character set inside the brackets.(NO SPACES) eg [-*&amp;a1] etc.
+ Matches only the first character in the sequence.</p>
+
+<p>- has a special meaning in character sets []. when at the start, it matches for the character ‘-‘, but when in between it is used to specify a range. eg to match numbers from 1 to 7: [1-7], or matching a-d: [a-d]</p>
+
+<p>caret ^ also has special meaning and stands for “everything except”. For eg to match al characters that are not a lower case letter: [^a-z]</p>
+
+<h4 id="quantifiers-matching-more-than-one-character-at-a-time">Quantifiers: matching more than one character at a time</h4>
+<ul>
+  <li>
+    <ul>
+      <li>matches 0 or more instances</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>matches 1 or more</li>
+    </ul>
+  </li>
+  <li>? matches 0 or one instances</li>
+  <li>{} matches exact numbers. eg a{3} -&gt; a three times works same for \d \s \w stuffs</li>
+  <li>{num1, num2} matches an range of numbers and follows {min, max} range. eg a{1,3} one to three repetitions of a. works same for \d \s \w stuffs</li>
+</ul>
+
+<h3 id="groups-allows-us-to-specify-different-matches">Groups: allows us to specify different matches</h3>
+
+<p>groups are defined using parenthesis ()</p>
+
+<p>for eg: to match Mr, Ms, Mrs:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>M(r</td>
+      <td>s</td>
+      <td>rs)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>pipe operator (</td>
+      <td>) is used to for “OR” in groups</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="back-references">Back references</h4>
+<p>the values in groups are stored in something called back groups.</p>
+
+<p>in vscode you can call them with $grpnum (eg $2) to replace them in replace mode in “find”</p>
+
+<p>however usually it is \num eg \2 for group 2</p>
+
+<h2 id="examples">Examples</h2>
+
+<ul>
+  <li>matching phone numbers</li>
+</ul>
+
+<p>321-555-4321</p>
+
+<p>123.555.1234</p>
+
+<p>soln -&gt; \d\d\d\W\d\d\d\W\d\d\d\d, dig dig dig non-whitespace dig…..</p>
+
+<ul>
+  <li>
+    <p>character matching</p>
+
+    <p>cat</p>
+
+    <p>mat</p>
+
+    <p>pat</p>
+
+    <p>bat</p>
+
+    <p>match everything except bat</p>
+
+    <p>[^b]at</p>
+  </li>
+</ul>
+
+<h1 id="in-python">In Python</h1>
+
+<p>remember to convert the string containing regular expressions to raw form: eg <code class="language-plaintext highlighter-rouge">r"hello"</code>. This is done so that python does not take expressions with a leading backslash and escape sequesces of it’s own.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">urls</span> <span class="o">=</span> 
+<span class="s">'''for groups
+match.group(grp_num) eg match.group(3)
+'''</span>
+
+<span class="c1"># Substitutions
+</span><span class="n">subbed_urls</span> <span class="o">=</span> <span class="n">pattern</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">''</span><span class="p">)</span>
+</code></pre></div></div>
+
+		</section>
+	</div>
+</body>
+
+</html>

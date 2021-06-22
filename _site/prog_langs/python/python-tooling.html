@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css?v=78c8719698feee0553096165409216db0a43f06f">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<style>
+		.navbar {
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 2px 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 2px 15px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: green;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #202020;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 8px 14px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #4666FF;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Index | datdhruvjain.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Index" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Interesting learnings on Computer stuff." />
+<meta property="og:description" content="Interesting learnings on Computer stuff." />
+<link rel="canonical" href="http://192.168.1.117:4000/prog_langs/python/python-tooling.html" />
+<meta property="og:url" content="http://192.168.1.117:4000/prog_langs/python/python-tooling.html" />
+<meta property="og:site_name" content="datdhruvjain.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Index" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://192.168.1.117:4000/prog_langs/python/python-tooling.html","headline":"Index","description":"Interesting learnings on Computer stuff.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a id="a-title" href="/">
+				<h1>datdhruvjain.github.io</h1>
+			</a>
+			<h2>Interesting learnings on Computer stuff.</h2>
+
+			<!--- need to check what this is all about
+		<section id="downloads">
+		
+		</section>
+		--->
+
+			<section class="navbar">
+
+
+				<!-- THE NON-DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+				<a href="./relative-file">Title 2</a>
+				<a href="../dir/relative-file-path">Title 3</a>
+				<a href="https://datdhruvjain.github.io/blockchain/blockchain">Blockchain</a>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				---------------------------------------->
+
+				<!-- THE DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<div class="dropdown">
+					<button class="dropbtn">dropdown-title
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+						<a href="./relative-file">Title 2</a>
+						<a href="../dir/relative-file-path">Title 3</a>
+					</div>
+				</div>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				------------------------------------------>
+
+				<a href="/configurations/configurations">My Configs</a>
+
+
+				<div class="dropdown">
+					<button class="dropbtn">Journeys
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<!--a href="https://datdhruvjain.github.io/journeys/blockchain/blockchain">Blockchain</a-->
+						<a href="/journeys/cybersec/cybersec">Cyber Sec</a>
+						<a href="/journeys/thm/thm">TryHackMe Journeys</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Prog Langs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/prog_langs/python/python">Python</a>
+						<a href="/prog_langs/cpp/cpp">C++</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Tools
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/tools/git">Git</a>
+						<a href="/tools/vim/vim-learnings">Vim</a>
+						<a href="/tools/markdown">Markdown</a>
+						<a href="/tools/computer-networks/computer-networks">Computer-Networks</a>
+					</div>
+				</div>
+
+
+				<!-- add new items from here -->
+			</section>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<section id="main_content">
+			<h1 id="index">Index</h1>
+<ol>
+  <li><a href="#pydoc">pydoc</a></li>
+  <li><a href="#pip">Pip</a></li>
+  <li><a href="#setuptools">Setuptools</a></li>
+  <li><a href="#argparse">argparse</a></li>
+  <li><a href="#pyinstaller">pyinstaller</a></li>
+  <li><a href="#python-packages">Note on python packages</a></li>
+  <li><a href="#kivy">kivy</a></li>
+  <li><a href="#preferred-lsp">Preferred LSP</a></li>
+</ol>
+
+<h3 id="pydoc">pydoc</h3>
+<p>To get help with used defined functions and classes, just run <code class="language-plaintext highlighter-rouge">pydoc</code></p>
+
+<p>eg:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># foo.py
+</span>
+<span class="k">def</span> <span class="nf">bar</span><span class="p">():</span>
+  <span class="s">"""this is the docstring for bar()"""</span>
+  <span class="k">print</span> <span class="s">'hello'</span>
+
+
+<span class="k">def</span> <span class="nf">baz</span><span class="p">():</span>
+  <span class="s">"""this is the docstring for baz()"""</span>
+  <span class="k">print</span> <span class="s">'world'</span>
+</code></pre></div></div>
+
+<p>After Running <code class="language-plaintext highlighter-rouge">pydoc</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pydoc ./foo.py
+Help on module foo:
+
+NAME
+    foo
+
+FILE
+    /path/to/foo.py
+
+FUNCTIONS
+    bar()
+        this is the docstring for bar()
+
+    baz()
+        this is the docstring for baz()
+</code></pre></div></div>
+
+<p>You can also generate an HTML help file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pydoc -w ./foo.py
+wrote foo.html
+</code></pre></div></div>
+
+<p><strong>Important remember</strong> pydoc will call only system docs, to call pydoc while in a <em>virtualenv</em>, you need to call <code class="language-plaintext highlighter-rouge">python -m pydoc module_name</code></p>
+
+<h3 id="pip">Pip</h3>
+
+<p>Did you know you can install packages that are not in the PyPI with pip install? It needs a setup.py/setup.cfg at the base of the pacakge. (which you need anyway while publishing a python package) But other than that you are all set!</p>
+
+<h4 id="pip-install-gitprotocolversion-control">pip install “git+protocol://version-control”</h4>
+
+<p>eg:</p>
+
+<pre><code class="language-git"># General syntax
+pip install "git+https://git.example.com/MyProject.git"
+
+# Over ssh
+git install "git+ssh://git.example.com/MyProject"
+
+# Local git repo
+git install "git+file:///home/user/projects/MyProject"
+</code></pre>
+
+<p>You can also pass a branch name, a commit hash, a tag name or a git ref is possible like so:</p>
+
+<pre><code class="language-git">git+https://git.example.com/MyProject.git@main#egg=MyProject
+git+https://git.example.com/MyProject.git@v1.0#egg=MyProject
+git+https://git.example.com/MyProject.git@da39a3ee5e6b4b0d3255bfef95601890afd80709#egg=MyProject
+git+https://git.example.com/MyProject.git@refs/pull/123/head#egg=MyProject
+</code></pre>
+
+<h4 id="pip-install-localfilename">pip install Local/file/name</h4>
+
+<p>You can also install local files by doing:</p>
+<pre><code class="language-git">python -m pip install path/to/SomeProject
+</code></pre>
+
+<h4 id="editable-installs">“EDITABLE” INSTALLS</h4>
+<p>“Editable” installs are fundamentally “setuptools develop mode” installs.</p>
+
+<h3 id="setuptools">setuptools</h3>
+<p><em>For building packages for pip</em></p>
+
+<details>
+  <summary>Example configuration</summary>
+
+  <p>pyproject.toml</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+</code></pre></div>  </div>
+
+  <p>setup.cfg</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[metadata]
+name = mypackage
+version = 0.0.1
+
+[options]
+packages = mypackage
+install_requires =
+    docutils &gt;= 0.3
+    requests &lt;= 0.4
+    importlib; python_version == "2.6"
+
+include_package_data = True
+
+[options.entry_points]
+console_scripts =
+    main = mypkg:some_func
+</code></pre></div>  </div>
+
+  <p>Automatic package discovery</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[options]
+packages = find:
+
+[options.packages.find] #optional
+include=pkg1, pkg2
+exclude=pk3, pk4
+</code></pre></div>  </div>
+
+  <p>project structure</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/mypackage/
+    pyproject.toml
+    setup.cfg # or setup.py
+    mypackage/__init__.py
+
+</code></pre></div>  </div>
+
+</details>
+
+<h3 id="argparse">argparse</h3>
+
+<p>Learned about <code class="language-plaintext highlighter-rouge">argparse</code> library of python std lib, it is <strong>Amazing!</strong></p>
+
+<p>performance of pyinstller is reduced if you use the -F/–onefile option. This is because pyinstaller needs to unpack everything in a temp direcotry and then run the code, which severly degrades performance.</p>
+
+<p>Using the default option or the –onedir option results in much faster code execution (so use that)</p>
+
+<p>As to how to go about uncomplicating the directory stuff, just create a shortcut at the root of the folder and that’s that.</p>
+
+<h3 id="pyinstaller">pyinstaller</h3>
+
+<p>Pyinstaller is a python module that creates native binaries out of a python file.</p>
+
+<p>pip install pyinstaller</p>
+
+<p>-F, –onefile creates just one standalone executable</p>
+
+<h3 id="python-packages">Python packages</h3>
+
+<p>They are modules! or maybe they are modules and they have and <strong>init</strong>.py file at the base of the directory. I will experiment more with these and report more.</p>
+
+<p>also if you want to import a file from a subdirectory, you need to do <code class="language-plaintext highlighter-rouge">from directory import file</code></p>
+
+<h4 id="importing-another-file">Importing another file</h4>
+
+<p>from the same directory, is very much possible!!</p>
+
+<p>Just import the file and you are on!</p>
+
+<h3 id="kivy">Kivy</h3>
+
+<p>All about Kivy: the amazing GUI library of python</p>
+
+<p>You can make android apps with kivy, using buildozer, but that is only supported on linux and Mac computers (UNIX)</p>
+
+<p>The views and everything else is also much saner than tkinter</p>
+
+<p>buildozer: build you need to specify INTERNET under requirements</p>
+
+<h3 id="python-on-windows-is-very-very-weird">Python on windows is very very weird</h3>
+
+<p><code class="language-plaintext highlighter-rouge">python pip</code> does not work by <code class="language-plaintext highlighter-rouge">py -m pip</code> works?!?!</p>
+
+<p>Idk this was too weird</p>
+
+<h3 id="preferred-lsp">Preferred LSP</h3>
+
+<p>Pylance hands down, is much closer to pycharm’s language completion.</p>
+
+		</section>
+	</div>
+</body>
+
+</html>

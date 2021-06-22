@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css?v=78c8719698feee0553096165409216db0a43f06f">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<style>
+		.navbar {
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 2px 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 2px 15px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: green;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #202020;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 8px 14px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #4666FF;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Key Bindings | datdhruvjain.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Key Bindings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Interesting learnings on Computer stuff." />
+<meta property="og:description" content="Interesting learnings on Computer stuff." />
+<link rel="canonical" href="http://192.168.1.117:4000/tools/vim/vim-learnings.html" />
+<meta property="og:url" content="http://192.168.1.117:4000/tools/vim/vim-learnings.html" />
+<meta property="og:site_name" content="datdhruvjain.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Key Bindings" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://192.168.1.117:4000/tools/vim/vim-learnings.html","headline":"Key Bindings","description":"Interesting learnings on Computer stuff.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a id="a-title" href="/">
+				<h1>datdhruvjain.github.io</h1>
+			</a>
+			<h2>Interesting learnings on Computer stuff.</h2>
+
+			<!--- need to check what this is all about
+		<section id="downloads">
+		
+		</section>
+		--->
+
+			<section class="navbar">
+
+
+				<!-- THE NON-DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+				<a href="./relative-file">Title 2</a>
+				<a href="../dir/relative-file-path">Title 3</a>
+				<a href="https://datdhruvjain.github.io/blockchain/blockchain">Blockchain</a>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				---------------------------------------->
+
+				<!-- THE DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<div class="dropdown">
+					<button class="dropbtn">dropdown-title
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+						<a href="./relative-file">Title 2</a>
+						<a href="../dir/relative-file-path">Title 3</a>
+					</div>
+				</div>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				------------------------------------------>
+
+				<a href="/configurations/configurations">My Configs</a>
+
+
+				<div class="dropdown">
+					<button class="dropbtn">Journeys
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<!--a href="https://datdhruvjain.github.io/journeys/blockchain/blockchain">Blockchain</a-->
+						<a href="/journeys/cybersec/cybersec">Cyber Sec</a>
+						<a href="/journeys/thm/thm">TryHackMe Journeys</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Prog Langs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/prog_langs/python/python">Python</a>
+						<a href="/prog_langs/cpp/cpp">C++</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Tools
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/tools/git">Git</a>
+						<a href="/tools/vim/vim-learnings">Vim</a>
+						<a href="/tools/markdown">Markdown</a>
+						<a href="/tools/computer-networks/computer-networks">Computer-Networks</a>
+					</div>
+				</div>
+
+
+				<!-- add new items from here -->
+			</section>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<section id="main_content">
+			
+<h1 id="key-bindings">Key Bindings</h1>
+<h2 id="some-basic-movements">Some Basic Movements</h2>
+
+<p><code class="language-plaintext highlighter-rouge">w</code>: jump to next word</p>
+
+<p><code class="language-plaintext highlighter-rouge">b</code>: jump to previous word</p>
+
+<p><code class="language-plaintext highlighter-rouge">x</code>: deletes a character</p>
+
+<p><code class="language-plaintext highlighter-rouge">a</code>: insert after cursor
+<code class="language-plaintext highlighter-rouge">A</code>: insert at the end of the line.</p>
+
+<p><code class="language-plaintext highlighter-rouge">o</code>: insert on the next line, <code class="language-plaintext highlighter-rouge">O</code> insert on the previous line</p>
+
+<p><code class="language-plaintext highlighter-rouge">I</code>: insert at the begining of the line.</p>
+
+<p><code class="language-plaintext highlighter-rouge">19G</code> : Jumps to line number 19</p>
+
+<p><code class="language-plaintext highlighter-rouge">diw</code> and <code class="language-plaintext highlighter-rouge">daw</code>: deletes the word if you are in the middle of a word. diw stands for <em>delete inner word</em>, daw stands for <em>delete a word</em></p>
+
+<p><code class="language-plaintext highlighter-rouge">cw</code>: deletes entire word, and <code class="language-plaintext highlighter-rouge">ce</code> deletes word and enters insert mode.</p>
+
+<p><code class="language-plaintext highlighter-rouge">D</code> deletes the rest of the line, <code class="language-plaintext highlighter-rouge">S</code> deletes the entire line and enters insert mode.</p>
+
+<h2 id="indentation">Indentation</h2>
+
+<p><code class="language-plaintext highlighter-rouge">==</code>: indents the current line</p>
+
+<p><code class="language-plaintext highlighter-rouge">gg = G</code>: auto-indent file</p>
+
+<h2 id="completion">Completion</h2>
+
+<p>(do not work in normal mode, work in insert mode, Don’t know about other modes)</p>
+
+<p><code class="language-plaintext highlighter-rouge">ctrl x ctrl o</code>: trigger omnifunc</p>
+
+<p><code class="language-plaintext highlighter-rouge">ctrl x ctrl n</code> or <code class="language-plaintext highlighter-rouge">ctrl n</code>: triggers <em>next</em> word completion</p>
+
+<p><code class="language-plaintext highlighter-rouge">ctrl x ctrl p</code> or <code class="language-plaintext highlighter-rouge">ctrl p</code>: triggers <em>previous</em> word completion</p>
+
+<p><code class="language-plaintext highlighter-rouge">ctrl x ctrl l</code>: triggers whole line completion</p>
+
+<h2 id="visual-block-mode">Visual Block mode</h2>
+
+<p>To add something to to alot of line together, you can use the visual block mode.</p>
+
+<p>Enter visual block mode using <code class="language-plaintext highlighter-rouge">ctrl-v</code> and mark all the lines, then type <code class="language-plaintext highlighter-rouge">I</code>, Capital “I” and insert text, then press <code class="language-plaintext highlighter-rouge">esc</code> and then… magic!</p>
+
+<h1 id="other-misc-stuff">other misc stuff</h1>
+<h2 id="statusline">StatusLine</h2>
+
+<p>Toggle Statusline with the following:</p>
+
+<ul>
+  <li>set laststatus=0 : don’t show statusline</li>
+  <li>set laststatus=1 : show statusline only if we have more than one windows.</li>
+  <li>set laststatus=2 : always show statusline</li>
+</ul>
+
+<p>you can set the statusline color with <code class="language-plaintext highlighter-rouge">:hi Statusline ctermbg=[0-256] ctermfg=[0-256] guitermbg=[#someThingsHex] guitermfg=[#someThingsHex]</code></p>
+
+<h2 id="folding">Folding</h2>
+
+<p><code class="language-plaintext highlighter-rouge">mb%zf'a</code> assigns fold</p>
+
+<h4 id="bracket-matching-happens-with--in-normal-mode">Bracket matching happens with % in normal mode</h4>
+
+<h2 id="netrw-file-explorer">Netrw (File Explorer)</h2>
+
+<p>You can open the default file explorer with <code class="language-plaintext highlighter-rouge">:Explore</code> or use <code class="language-plaintext highlighter-rouge">:Lexplore</code> or <code class="language-plaintext highlighter-rouge">:Lex</code> to open a toggalable Netrw window on the left.</p>
+
+<p>You can specify the size with <code class="language-plaintext highlighter-rouge">:19Lexplore</code> or <code class="language-plaintext highlighter-rouge">:[size]Lex</code></p>
+
+<h2 id="creating-a-command-shortcut">Creating a command shortcut</h2>
+
+<p>Say you don’t want to use a leader key, you can create a command, and then call it like the normal <code class="language-plaintext highlighter-rouge">:Lol</code> way.</p>
+
+<p>Remeber though, you cannot create a new command if your first character is small. So here in Lol, first L <strong>NEEDs</strong> to be capital.</p>
+
+<p>Eg, <code class="language-plaintext highlighter-rouge">:command Lol 19Lexplore</code></p>
+
+<p>Now you can call <code class="language-plaintext highlighter-rouge">19Lexplore</code> from just <code class="language-plaintext highlighter-rouge">:lol</code></p>
+
+<h2 id="mouse-support">Mouse support</h2>
+
+<p>you can enable nice mouse fatures using <code class="language-plaintext highlighter-rouge">set mouse=nicr</code> or <code class="language-plaintext highlighter-rouge">set mouse=</code>a`. (Though what each one does is beyond me)</p>
+
+<h2 id="per-project-config">Per project config</h2>
+
+<p>You can define each project to have a different config using .exrc or .nvimrc/.vimrc at the base of the directory</p>
+
+<p><strong>you need to specify it in the main vimrc</strong> using <code class="language-plaintext highlighter-rouge">set secure exrc</code></p>
+
+		</section>
+	</div>
+</body>
+
+</html>

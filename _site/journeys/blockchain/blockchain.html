@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css?v=78c8719698feee0553096165409216db0a43f06f">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<style>
+		.navbar {
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 2px 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 2px 15px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: green;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #202020;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 8px 14px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #4666FF;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>What is a Blockchain? | datdhruvjain.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="What is a Blockchain?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Interesting learnings on Computer stuff." />
+<meta property="og:description" content="Interesting learnings on Computer stuff." />
+<link rel="canonical" href="http://192.168.1.117:4000/journeys/blockchain/blockchain.html" />
+<meta property="og:url" content="http://192.168.1.117:4000/journeys/blockchain/blockchain.html" />
+<meta property="og:site_name" content="datdhruvjain.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="What is a Blockchain?" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://192.168.1.117:4000/journeys/blockchain/blockchain.html","headline":"What is a Blockchain?","description":"Interesting learnings on Computer stuff.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a id="a-title" href="/">
+				<h1>datdhruvjain.github.io</h1>
+			</a>
+			<h2>Interesting learnings on Computer stuff.</h2>
+
+			<!--- need to check what this is all about
+		<section id="downloads">
+		
+		</section>
+		--->
+
+			<section class="navbar">
+
+
+				<!-- THE NON-DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+				<a href="./relative-file">Title 2</a>
+				<a href="../dir/relative-file-path">Title 3</a>
+				<a href="https://datdhruvjain.github.io/blockchain/blockchain">Blockchain</a>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				---------------------------------------->
+
+				<!-- THE DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<div class="dropdown">
+					<button class="dropbtn">dropdown-title
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+						<a href="./relative-file">Title 2</a>
+						<a href="../dir/relative-file-path">Title 3</a>
+					</div>
+				</div>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				------------------------------------------>
+
+				<a href="/configurations/configurations">My Configs</a>
+
+
+				<div class="dropdown">
+					<button class="dropbtn">Journeys
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<!--a href="https://datdhruvjain.github.io/journeys/blockchain/blockchain">Blockchain</a-->
+						<a href="/journeys/cybersec/cybersec">Cyber Sec</a>
+						<a href="/journeys/thm/thm">TryHackMe Journeys</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Prog Langs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/prog_langs/python/python">Python</a>
+						<a href="/prog_langs/cpp/cpp">C++</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Tools
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/tools/git">Git</a>
+						<a href="/tools/vim/vim-learnings">Vim</a>
+						<a href="/tools/markdown">Markdown</a>
+						<a href="/tools/computer-networks/computer-networks">Computer-Networks</a>
+					</div>
+				</div>
+
+
+				<!-- add new items from here -->
+			</section>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<section id="main_content">
+			<h1 id="what-is-a-blockchain">What is a Blockchain?</h1>
+
+<p>Let’s take the word Blockchain and deconstuct it.</p>
+
+<h2 id="a-block">A Block</h2>
+
+<p>The Block in the blockchain refers to the actual data container. Think of it as a package that you might recieve from Amazon when you order something online.</p>
+
+<p>It has the actual product inside container, but the container itself has some information for the Delivery Person to know where to deliever it, any extra delivery instructions and information for Amazon’s internal processing.</p>
+
+<p>In a similiar way, A block contains the actual data, and some data for itself. The actual data in a cryptocurrency blockchain (like Bitcoin) would be the transaction details. All the extra information is stored in a segment called the “Block Header”.</p>
+
+<h3 id="the-block-header-contains">The Block Header contains:</h3>
+<h4 id="the-block-version">The Block version</h4>
+<p>This is to store the information about the software version and other such details.</p>
+<h4 id="merkel-tree-root-hash">Merkel Tree Root Hash</h4>
+<h4 id="time-stamp">Time Stamp</h4>
+<h4 id="nbits">nBits</h4>
+<h4 id="nonce">Nonce</h4>
+<p>This is a special number that can be adjusted to change the complexity of the “Math problem” and hence the time taken to solve it. This particular data can help with differences in computing power over time.</p>
+<h4 id="parent-block-hash">Parent Block Hash</h4>
+<p>Each Block contains within itself, the hash value of the previous block.</p>
+
+<h2 id="steps-invlolved-in-adding-a-block-to-the-blockchain">Steps invlolved in adding a block to the Blockchain</h2>
+
+<ol>
+  <li>
+    <p>Nodes communicate with the blockchain network via a combination of private &amp; public keys. The user uses its own private key to digitally sign its own transactions and then can access the network via the public key. Each signed transaction is broadcast by a node that makes the transaction.</p>
+  </li>
+  <li>
+    <p>The transaction is then verified by all nodes within the blockchain network except the node that makes the transaction.During this step, any invalid transactions are discarded. It’s known as verification.</p>
+  </li>
+  <li>
+    <p>Mining is the third step in which every legitimate transaction is collected by the network nodes during a fixed time into a block and implements a proof-of-work to find a nonce for its block. Once a node finds a nonce, it broadcasts the block to all participating nodes.</p>
+  </li>
+  <li>
+    <p>Each node collects a newly generated block and confirms whether the block contains 
+ a. legal transactions and 
+ b. declares the accuracy of parent block by utilizing the hash value. 
+After the completion of confirmation, nodes will add the block to the blockchain and apply the transactions to bring the blockchain up-to-date. In case, if the block is not confirmed, the projected block is rejected. This ends the existing mining round.</p>
+  </li>
+</ol>
+
+		</section>
+	</div>
+</body>
+
+</html>

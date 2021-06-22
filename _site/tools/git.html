@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css?v=78c8719698feee0553096165409216db0a43f06f">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<style>
+		.navbar {
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 2px 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 2px 15px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: green;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #202020;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 8px 14px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #4666FF;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Git | datdhruvjain.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Git" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Interesting learnings on Computer stuff." />
+<meta property="og:description" content="Interesting learnings on Computer stuff." />
+<link rel="canonical" href="http://192.168.1.117:4000/tools/git.html" />
+<meta property="og:url" content="http://192.168.1.117:4000/tools/git.html" />
+<meta property="og:site_name" content="datdhruvjain.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Git" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://192.168.1.117:4000/tools/git.html","headline":"Git","description":"Interesting learnings on Computer stuff.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a id="a-title" href="/">
+				<h1>datdhruvjain.github.io</h1>
+			</a>
+			<h2>Interesting learnings on Computer stuff.</h2>
+
+			<!--- need to check what this is all about
+		<section id="downloads">
+		
+		</section>
+		--->
+
+			<section class="navbar">
+
+
+				<!-- THE NON-DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+				<a href="./relative-file">Title 2</a>
+				<a href="../dir/relative-file-path">Title 3</a>
+				<a href="https://datdhruvjain.github.io/blockchain/blockchain">Blockchain</a>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				---------------------------------------->
+
+				<!-- THE DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<div class="dropdown">
+					<button class="dropbtn">dropdown-title
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+						<a href="./relative-file">Title 2</a>
+						<a href="../dir/relative-file-path">Title 3</a>
+					</div>
+				</div>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				------------------------------------------>
+
+				<a href="/configurations/configurations">My Configs</a>
+
+
+				<div class="dropdown">
+					<button class="dropbtn">Journeys
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<!--a href="https://datdhruvjain.github.io/journeys/blockchain/blockchain">Blockchain</a-->
+						<a href="/journeys/cybersec/cybersec">Cyber Sec</a>
+						<a href="/journeys/thm/thm">TryHackMe Journeys</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Prog Langs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/prog_langs/python/python">Python</a>
+						<a href="/prog_langs/cpp/cpp">C++</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Tools
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/tools/git">Git</a>
+						<a href="/tools/vim/vim-learnings">Vim</a>
+						<a href="/tools/markdown">Markdown</a>
+						<a href="/tools/computer-networks/computer-networks">Computer-Networks</a>
+					</div>
+				</div>
+
+
+				<!-- add new items from here -->
+			</section>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<section id="main_content">
+			<h1 id="git">Git</h1>
+
+<p>Some Conventions</p>
+
+<p>repository(repo) -&gt; basically just a folder, which has all your code in it</p>
+
+<p>local repo -&gt; The folder that is On your computer</p>
+
+<p>remote repo -&gt; The folder that is on some git server (or on a server, basically not on your computer)</p>
+
+<p>origin is the git repo, master is the branch of the repo you want to push to</p>
+
+<h2 id="to-initialize-a-local-repository">To initialize a local repository</h2>
+
+<pre><code class="language-git">git init &lt;directory&gt;
+</code></pre>
+
+<details>
+  <summary> some things can happen, **Keep calm and do this**</summary>
+
+  <p>if you create a directory on a remote and initialize with <code class="language-plaintext highlighter-rouge">git init .</code> and then try commiting to it, it wont happen!</p>
+
+  <p>on the remote you need to <code class="language-plaintext highlighter-rouge">git checkout -b tmp</code> and then push from your machine(local) to the remote</p>
+
+  <p><a href="https://stackoverflow.com/questions/2816369/git-push-error-remote-rejected-master-master-branch-is-currently-checked">here is a stackoverflow page</a></p>
+
+  <p>I just had the same error while I began learning Git. Some of the other answers are clearly not for someone new to Git!</p>
+
+  <p>(I am going to use non technical terms to get the idea across.) Anyway, what is happening is that you have two repositories, one is the original you first made, and the other the work one you just made.</p>
+
+  <p>Right now you are in your work repository and are using the “master” branch. But you also happen to be “logged in” in your original repository to the same “master” branch. Now since you’re “logged in” in the original, Git fears you might mess up because you might be working on the original and screw things up. So you need to return to the original repository and do a “git checkout someotherbranch”, and now you can push with no problems.</p>
+
+  <p>I hope this helps.</p>
+
+</details>
+
+<h2 id="to-add-the-recent-changes-to-the-tracker-list">To add the recent changes to the tracker list</h2>
+
+<pre><code class="language-git"># adding only a single file
+git add &lt;filename&gt;
+
+# OR add an entire directory
+git add &lt;directory&gt;
+</code></pre>
+
+<h4 id="checking-the-things-in-the-tracker-list">Checking the things in the tracker list</h4>
+<p>this is done with the status command</p>
+<pre><code class="language-git">git status
+
+# example
+# On branch master
+# Your branch is up to date with 'origin/master'.
+
+# Changes to be committed:
+#  (use "git restore --staged &lt;file&gt;..." to unstage)
+#        new file:   About-git.md
+</code></pre>
+
+<h2 id="commiting-the-changes-in-the-tracker-list">Commiting the changes in the tracker list</h2>
+
+<details>
+  <summary>You need to configure your "user" acount before commiting</summary>
+
+  <h4 id="for-global-config">for global config</h4>
+  <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"firstname lastname"</span>
+git config <span class="nt">--global</span> user.email <span class="s2">"email_id"</span>
+</code></pre></div>  </div>
+  <h4 id="you-can-also-set-local-directory-related-config">you can also set local directory related config</h4>
+  <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config user.name <span class="s2">"firstname lastname"</span>
+git config user.email <span class="s2">"email_id"</span>
+</code></pre></div>  </div>
+</details>
+
+<p>While commiting, a commit is absolutely required. Another -m can be used to provide some description about the message</p>
+
+<pre><code class="language-git">git commit -m "message" -m "description"
+
+# git commit -m "add stuff to about git"
+# [master cd5c47a] add stuff to about git
+# 1 file changed, 126 insertions(+)
+# create mode 100644 About-git.md
+</code></pre>
+
+<h2 id="making-changes-to-a-remote-repository">Making changes to a remote repository</h2>
+
+<details>
+  <summary>First you will need to have access to the repository</summary>
+
+  <p>This can be done via SSH keys.</p>
+
+  <ol>
+    <li>
+      <p>Create SSH keys and add the .pub (public part) of the key on github/your git provider</p>
+
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+</code></pre></div>      </div>
+    </li>
+    <li>
+      <p>Ensure ssh-agent is running</p>
+
+      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c"># start the ssh-agent in the background</span>
+<span class="nv">$ </span><span class="nb">eval</span> <span class="si">$(</span>ssh-agent <span class="nt">-s</span><span class="si">)</span>
+<span class="o">&gt;</span> Agent pid 59566
+</code></pre></div>      </div>
+
+      <p>or on Windows powershell</p>
+
+      <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">Get-Service</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">ssh-agent</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Set-Service</span><span class="w"> </span><span class="nt">-StartupType</span><span class="w"> </span><span class="nx">Manual</span><span class="w">
+ </span><span class="n">Start-Service</span><span class="w"> </span><span class="nx">ssh-agent</span><span class="w">
+</span></code></pre></div>      </div>
+    </li>
+    <li>
+      <p>Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace�<em>id_rsa</em>�in the command with the name of your private key file.</p>
+
+      <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh-add ~/.ssh/id_rsa
+</code></pre></div>      </div>
+    </li>
+    <li>
+      <p>Add the ssh key to your git provider</p>
+    </li>
+  </ol>
+
+  <h3 id="setting-up-a-git-server">setting up a git server</h3>
+
+  <p>Most of it is the same, you need to initialize a bare repository, to which you commit to and pull from on the <em>server</em>. And ofc add ssh public key of your computer to the serve.</p>
+
+  <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># on the server initialize a bare repository with .git extention as an conventi</span>
+<span class="nb">mkdir </span>my_repo.git
+<span class="nb">cd </span>my_repo.git
+git init <span class="nt">--bare</span>
+</code></pre></div>  </div>
+
+</details>
+
+<p>Then you can use the push command</p>
+<pre><code class="language-git">git push origin master
+# origin is the git repo
+# master is the branch of the repo you want to push to
+</code></pre>
+
+<h3 id="getting-cahnges-from-remote-repository">Getting cahnges from remote repository</h3>
+<p>To do this you use the pull command</p>
+<pre><code class="language-git">git pull origin master
+</code></pre>
+<h2 id="tracking-changes-in-a-local-repo">Tracking changes in a local repo</h2>
+<p>use the git log command</p>
+<pre><code class="language-git">git log
+</code></pre>
+<p>this gives the recent changes along with the unique hashcodes of each change</p>
+
+<h2 id="undoing-changes">Undoing changes</h2>
+<p>we can undo the most recent changes using the git reset command</p>
+
+<p>reset without any argument resets only changes in the tracker list(git add stuff), to undo commits, you need to specify HEAD~a_num. HEAD is a pointer to the most recent change. HEAD~1 -&gt; HEAD -1 = the change before the most recent change</p>
+<pre><code class="language-git"># for tracker
+git reset
+
+# for commits
+git reset HEAD~1 # or HEAD~a_num
+</code></pre>
+
+<h2 id="branching">Branching</h2>
+<p>to change to a different branch of the repo, use the checkout -b command</p>
+<pre><code class="language-git">git checkout -b &lt;branch-name&gt;
+# example
+# git checkout -b master
+</code></pre>
+
+<p>to merge the changes of the two branches, here you don’t have to specify the branch you want to merge INTO because it is usually the branch you are currently working on</p>
+<pre><code class="language-git">git merge &lt;branch name&gt;
+</code></pre>
+
+<p>to push a branch onto a remote git server:</p>
+<pre><code class="language-git">git push --set-upstream origin branch_name
+git push -u origin branch_name
+</code></pre>
+
+<h3 id="managing-merge-conflicts">Managing merge conflicts</h3>
+<p><a href="https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts">chekck this out</a></p>
+
+<p>use <code class="language-plaintext highlighter-rouge">git stash</code> command</p>
+
+<p>git stash by default stashes, use <code class="language-plaintext highlighter-rouge">git stash pop</code> or <code class="language-plaintext highlighter-rouge">git stash apply</code> to apply changes then <code class="language-plaintext highlighter-rouge">git stash drop</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">git stash list</code> to list stashe and <code class="language-plaintext highlighter-rouge">git stash show</code> to show changes</p>
+
+<h3 id="to-delete-branches">To delete branches</h3>
+
+<pre><code class="language-git"># To delete branch locally:
+git branch -d branch_name
+
+# To delete branch remotely:
+git push origin/remote_ref --delete branch_name
+</code></pre>
+
+<h2 id="git-tags">Git tags</h2>
+
+<p>tags are non-branch save points</p>
+
+<p>to create a tag, just do <code class="language-plaintext highlighter-rouge">git tag tag-name</code></p>
+
+<p>you can also checkout git tags using the checkout command</p>
+
+<h2 id="deleting-the-history-of-a-branch">Deleting the history of a branch</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">--orphan</span> tmp-main <span class="c"># create a temporary branch</span>
+git add <span class="nt">-A</span>  <span class="c"># Add all files and commit them</span>
+git commit <span class="nt">-m</span> <span class="s1">'Add files'</span>
+git branch <span class="nt">-D</span> main <span class="c"># Deletes the master branch</span>
+git branch <span class="nt">-m</span> main <span class="c"># Rename the current branch to master</span>
+git push <span class="nt">-f</span> origin main <span class="c"># Force push master branch to Git server</span>
+</code></pre></div></div>
+
+		</section>
+	</div>
+</body>
+
+</html>

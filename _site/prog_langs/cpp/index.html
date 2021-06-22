@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css?v=78c8719698feee0553096165409216db0a43f06f">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<style>
+		.navbar {
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			padding: 2px 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 2px 15px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: green;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #202020;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 8px 14px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #4666FF;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Learning C++ | datdhruvjain.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Learning C++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Interesting learnings on Computer stuff." />
+<meta property="og:description" content="Interesting learnings on Computer stuff." />
+<link rel="canonical" href="http://192.168.1.117:4000/prog_langs/cpp/" />
+<meta property="og:url" content="http://192.168.1.117:4000/prog_langs/cpp/" />
+<meta property="og:site_name" content="datdhruvjain.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Learning C++" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://192.168.1.117:4000/prog_langs/cpp/","headline":"Learning C++","description":"Interesting learnings on Computer stuff.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a id="a-title" href="/">
+				<h1>datdhruvjain.github.io</h1>
+			</a>
+			<h2>Interesting learnings on Computer stuff.</h2>
+
+			<!--- need to check what this is all about
+		<section id="downloads">
+		
+		</section>
+		--->
+
+			<section class="navbar">
+
+
+				<!-- THE NON-DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+				<a href="./relative-file">Title 2</a>
+				<a href="../dir/relative-file-path">Title 3</a>
+				<a href="https://datdhruvjain.github.io/blockchain/blockchain">Blockchain</a>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				---------------------------------------->
+
+				<!-- THE DROPDOWN MENUS WORK LIKE THIS
+				----------------------------------------
+				
+				<div class="dropdown">
+					<button class="dropbtn">dropdown-title
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="https://datdhruvjain.github.io/directory/file">Title 1</a>
+						<a href="./relative-file">Title 2</a>
+						<a href="../dir/relative-file-path">Title 3</a>
+					</div>
+				</div>
+
+				#	Do Not add add the extention to the file, eg do not put file.md, just file
+				------------------------------------------>
+
+				<a href="/configurations/configurations">My Configs</a>
+
+
+				<div class="dropdown">
+					<button class="dropbtn">Journeys
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<!--a href="https://datdhruvjain.github.io/journeys/blockchain/blockchain">Blockchain</a-->
+						<a href="/journeys/cybersec/cybersec">Cyber Sec</a>
+						<a href="/journeys/thm/thm">TryHackMe Journeys</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Prog Langs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/prog_langs/python/python">Python</a>
+						<a href="/prog_langs/cpp/cpp">C++</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">Tools
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="/tools/git">Git</a>
+						<a href="/tools/vim/vim-learnings">Vim</a>
+						<a href="/tools/markdown">Markdown</a>
+						<a href="/tools/computer-networks/computer-networks">Computer-Networks</a>
+					</div>
+				</div>
+
+
+				<!-- add new items from here -->
+			</section>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<section id="main_content">
+			<h1 id="learning-c">Learning C++</h1>
+
+<h2 id="the-very-basics">The very basics</h2>
+
+<p><code class="language-plaintext highlighter-rouge">std::cout&lt;&lt;"lol"</code> -&gt; cout stands for console statement and like the unix format, <code class="language-plaintext highlighter-rouge">&lt;&lt;</code> stands for write to or append to.</p>
+
+<p><code class="language-plaintext highlighter-rouge">std</code> stands for std and is a namespace. namespace is just like a block and allows you to create multiple things under the same header name. We can create two functions with the same name under two different libraries and use the one that we want using namespaces. eg here we use function name cout of std/standard namespace.</p>
+
+<p>you can eliminate the <code class="language-plaintext highlighter-rouge">std::cout</code> by using the keywords <code class="language-plaintext highlighter-rouge">using namespace std</code>. you can also use “using declaration” wherein you specify the exact function that you want to use instead of the entire thing.</p>
+
+<p>Here cout is an object(!!!). cout comes under the class ostream.</p>
+
+<p>you can add to what is to be added to cout by adding more <code class="language-plaintext highlighter-rouge">&lt;&lt; statements</code>, eg: <code class="language-plaintext highlighter-rouge">std::cout &lt;&lt; "You have" &lt;&lt; slices &lt;&lt; of pizza. &lt;&lt; std::endl</code>. Here endl stands for endline (which if you don’t put, you will get a %. idk why)</p>
+
+<h4 id="taking-input">taking input</h4>
+
+<p>to take in input, you need <code class="language-plaintext highlighter-rouge">std::cin &gt;&gt; varname</code>. cin is a object of istream.</p>
+
+<h2 id="vectors">Vectors</h2>
+
+<p>Vectors are akin to lists or arraylists. They are dynamic in nature and can increase memory use when adding new elements</p>
+
+<p>to use vectors you need to pass a flag during compilation, <code class="language-plaintext highlighter-rouge">g++ -std=c++11 file.cpp</code></p>
+
+<p>to declare a vector:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">items</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+<span class="n">items</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>    <span class="c1">// add element 100 to the list</span>
+<span class="n">items</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>    <span class="c1">// returns the third element</span>
+<span class="n">items</span><span class="p">.</span><span class="n">size</span><span class="p">()</span>    <span class="c1">// returns the size of vector</span>
+</code></pre></div></div>
+
+<p>vectors are pass by value rather than pass by value</p>
+
+<h2 id="stl-arrays-standard-template-lib-arrays">STL Arrays (standard template lib arrays)</h2>
+
+<p>**<anything> is a template**</anything></p>
+
+<p>to create a stl array,</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">type</span><span class="p">,</span><span class="n">size</span><span class="o">&gt;</span> <span class="n">lol</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="n">lol</span><span class="p">;</span>    
+</code></pre></div></div>
+
+<ul>
+  <li>they are statically sized</li>
+  <li>they are passed by value</li>
+  <li>they remember their own size</li>
+</ul>
+
+<h2 id="arrays-types-and-pass-by-reference">arrays types and pass by reference</h2>
+
+<p><strong>vectors and stl arrays are passed by value and not by reference by default(which is unlike C style array). Now you can pass by reference by doing &amp;arr_name</strong></p>
+
+<p>eg</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">lol</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+
+<span class="n">func</span> <span class="p">(</span><span class="n">lol</span><span class="p">){};</span>	<span class="c1">// pass by VALUE, COPY values, DONT MODIFY the og vector</span>
+
+<span class="n">func</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lol</span><span class="p">){};</span>	<span class="c1">// pass by REFERECNE, DONT COPY values, MODIFY the og vector</span>
+
+</code></pre></div></div>
+
+<h4 id="range-based-for-loop-for-each-loop">Range based for loop (for each loop)</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span> <span class="o">:</span> <span class="n">data</span><span class="p">){</span>
+	<span class="c1">// do something;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="iostreams">IOStreams</h2>
+
+<p>Input stream -&gt; buffer (eg console) -&gt; running program</p>
+
+<p>buffer is like a container area which gets filled from the input stream and the is sent to the running program after some event.</p>
+
+<p>to open files:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;fstream&gt;
+</span>
+<span class="n">std</span><span class="o">::</span><span class="n">ofstream</span> <span class="n">file</span><span class="p">;</span>	<span class="c1">// create instance of ofstream class</span>
+<span class="n">file</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="s">"filename"</span><span class="p">);</span>  <span class="c1">// and open the file</span>
+
+<span class="c1">// to write to the file</span>
+<span class="n">file</span> <span class="o">&lt;&lt;</span> <span class="s">"hey"</span><span class="p">;</span>
+
+<span class="c1">// works like cout</span>
+
+<span class="n">file</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>		<span class="c1">// close the file</span>
+</code></pre></div></div>
+
+<p>if you want to append, you can <code class="language-plaintext highlighter-rouge">file.open("filename", std::ios::app)</code>. ios stands for input/output stream, and app stands for append</p>
+
+<p>also you can check if the file is open or not using <code class="language-plaintext highlighter-rouge">file.is_open()</code> method.</p>
+
+<p>and to take filename from the user, do:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">filename</span><span class="p">;</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">filename</span><span class="p">;</span>
+
+	<span class="n">file</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">std</span><span class="o">::</span><span class="n">ios</span><span class="o">::</span><span class="n">app</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>reading from files:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// to read from a file, you need to make an input file stream object.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">ifstream</span> <span class="nf">file</span><span class="p">(</span><span class="s">"mcd.txt"</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">names</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">input</span><span class="p">;</span>
+
+<span class="k">while</span><span class="p">(</span><span class="n">file</span> <span class="o">&gt;&gt;</span> <span class="n">input</span><span class="p">){</span>
+	<span class="n">names</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">input</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The get and getline methods for input from files:</p>
+
+<ul>
+  <li>get returns a char value <code class="language-plaintext highlighter-rouge">char temp = file.get();</code></li>
+  <li>getline returns an entire line:
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">temp</span><span class="p">;</span>
+	
+  <span class="n">getline</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">line</span><span class="p">);</span>
+  <span class="c1">// store the line "from" file into "line"</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="functions">Functions</h1>
+
+<p>what’s in a name?</p>
+
+<ul>
+  <li>A function is a block of code grouped together an excecuted when called upon</li>
+  <li>A method is similiar, but a method is attached to an Object rather than being on it’s own.</li>
+  <li>Static methods are attached to classes but don’t need an instance to be called (they are not attached to the object).</li>
+  <li>constructor is an initializer for a class.
+    <ul>
+      <li>destructor destroys the object and cleans up after the object.</li>
+    </ul>
+
+    <h3 id="the-const-keyword">The const keyword</h3>
+  </li>
+</ul>
+
+<p>const keyword can be used to pass a variable/array(which is passed by decay to pointer/reference) to a function if you dont want it’s value to change by the function</p>
+
+<p>eg:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">do_something</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Remember, when this is done, if a function exists within the parent function that also uses the const variable, the const variable will have to be passed as const in that function as well, otherwise you will get an error.</p>
+
+<p>Also the const keyword affects method signature so while declaration of the function you also need to specify const with the parameter you want to make const.</p>
+
+<h2 id="pass-bys-in-arguments">Pass Bys in arguments</h2>
+
+<ol>
+  <li>
+    <p>pass by value.</p>
+
+    <p>in this case the value is passed (to the function). most things are passed by value (even custom class types).</p>
+  </li>
+  <li>
+    <p>pass by decay to pointer</p>
+
+    <p>in this case the variable decays to a pointer and then that pointer is passed. Mostly used in arrays.</p>
+  </li>
+  <li>
+    <p>pass by reference</p>
+
+    <p>we have to explicitly pass by reference using <code class="language-plaintext highlighter-rouge">&amp;</code> before the variable name <em>in the function declaration/defination and not in the function call</em> (for eg &amp;x). In pass by reference, direct memory location is passed.</p>
+  </li>
+</ol>
+
+		</section>
+	</div>
+</body>
+
+</html>
