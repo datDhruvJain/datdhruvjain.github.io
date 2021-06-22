@@ -1,1 +1,0 @@
-[Nmap Learnings](./nmap-learnings)
