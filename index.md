@@ -13,6 +13,9 @@ My interets include Blockchain, Python, C, Linux and Archery 🏹
 - 💬 Ask me about the books I have read, what I love about Mumbai, and mind boggling philosophical stuff.
 
 - 🔧 Check out [my configurations](https://datdhruvjain.github.io/configurations/configurations) for various Systems
+    - I use python for mostly everything
+    - I am working on pet projects with Java
+    - C/C++ for Leetcode, Hackerank etc
 
 <!---
 - 🔭 I’m currently working on ...
